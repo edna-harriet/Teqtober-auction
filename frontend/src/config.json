@@ -1,0 +1,9 @@
+{
+    "private_key": "2807ffbc90699b56a2c781d7e7c40b55b2d6d3f0a9ff09c5e1cb1dc968f7e4a2",
+    "network": "localhost:8545",
+    "Aucc": "0x5fbdb2315678afecb367f032d93f642f64180aa3",
+    "name": "Ether",
+    "symbol": "ETH",
+    "total_supply": "1000000000000000000000000",
+    "decimals": 18
+  }

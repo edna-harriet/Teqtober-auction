@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Hardhat React Dapp"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/laptops.gif" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Hardhat + React App = Dapp</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+      <body>
+          <div class="center">
+              <h2>Teqtober Auction System</h2>
+              <form class="search-container" id="send">
+                  <input type="text" id="address" placeholder="Enter contract address">
+                  <button type="submit" class="button">Is Owner</button>
+                  <input type="text" id="address" placeholder="Place bid">
+                  <button type="submit" class="button">Submit</button>
+                  <input type="text" id="address" placeholder="bid status">
+                  <button type="submit" class="button">Send</button>
+                  <input type="text" id="address" placeholder="Highest bidder">
+                  <button type="submit" class="button">win</button>
+                  <input type="text" id="address" placeholder="Finalize Auction">
+                  <button type="submit" class="button">End</button>
+              </form>
+              <h4>Status:</h4>
+              <p id="status"></p>
+              <h4>Transactions</h4>
+              <ol id="transactions">
+              </ol>
+          </div>
+          <script src=""></script>
+  </body>
+</html>
