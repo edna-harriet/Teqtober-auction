@@ -7,7 +7,7 @@ dependencies:
 
 ```sh
 git clone https://github.com/edna-harriet/Teqtober-auction.git
-cd auc-sys
+cd Teqtober-auction
 npm install
 ```
 
