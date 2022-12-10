@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content=""
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/laptops.gif" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>TeqTober Auction System</title>
+    <style>
+        body {
+            background-color: #9FE2BF;
+            font-size: 40px;
+            font-family: verdana, Geneva, Tahoma, San-serif;
+            text-align: center
+        }
+        
+        button {
+            background-color: #DE3163;
+            font-family: Impact, Haettenshweller, 'Arial Narrow Bold', sans-serif;
+            font-size: 15px;
+        
+        }
+    </style>   
+  </head>
+      <body>
+          <div class="center">
+              <h2>Teqtober Auction System</h2>
+              <form class="search-container" id="send">
+                  <button onClick="ConnectMetamask()">Connect to metamask</button><br>
+                  <p id="AccountArea"></p>
+                  <button onClick="ConnectContract()">Connect to contract</button><br>
+                  <p id="ContractArea"></p>
+                  
+                <script>
+                  
+                    //connect metamask
+                    let account;
+                    const ConnectMetamask= async () => {
+                      if(window.ethereum !== "undefined") {
+                        const accounts = await ethereum.request({method: "eth_requestAccounts"});
+                        account = accounts[0];
+                        document.getElementById("AccountArea").innerHTML = account;
+                      }
+                    }
+                        //connect to contract
+                     {        
+                      const Address = "0x5FbDB2315678afecb367f032d93F642f64180aa3";
+                      window.web3 = await new Web3(window.ethereum);
+                      window.contract = await new window.web3.Contract(Aucc);
+                      document.getElementById("ContractArea").innerHTML = "connected to smart contract";   
+                     }
+                                                                    
+              </script>                 
+          </body>
+</html>
