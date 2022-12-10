@@ -8,8 +8,9 @@ dependencies:
 ```sh
 git clone https://github.com/edna-harriet/Teqtober-auction.git
 cd Teqtober-auction
+npm install --save-dev hardhat
 npm install
-```
+
 
 Once installed, let's run Hardhat's testing network:
 
